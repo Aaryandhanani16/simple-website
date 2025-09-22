@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+header {
+  background: #222;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links li a:hover {
+  color: #ff6f61;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff;
+}
+.hero-img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
+  color: #ff6f61;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+.featured {
+  background: #f1f1f1;
+  padding: 2rem 1rem;
+}
+.featured h2 {
+  text-align: center;
+  color: #222;
+}
+.shoe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.shoe-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1rem;
+  text-align: center;
+}
+.shoe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.shoe-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #ff6f61;
+}
+.shoe-card p {
+  color: #222;
+  font-weight: bold;
+}
+.add-cart {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.add-cart:hover {
+  background: #e55d50;
+}
+.about-main {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+.about-section h2 {
+  color: #ff6f61;
+}
+.contact-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form label {
+  font-weight: 500;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #e55d50;
+}
+#formMsg {
+  margin-top: 0.5rem;
+  color: #ff6f61;
+  font-weight: 500;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    gap: 1rem;
+    background: #222;
+    padding: 1rem 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
